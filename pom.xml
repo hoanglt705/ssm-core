@@ -27,6 +27,7 @@
 		<jide-oss.version>3.6.18</jide-oss.version>
 		<softsmithy.version>0.9</softsmithy.version>
 		<myMavenRepo.read.url>https://mymavenrepo.com/repo/0gYeR1uVbGBd8IBUlAOb/</myMavenRepo.read.url>
+		<myMavenRepo.write.url>https://mymavenrepo.com/repo/EsiHd95I3nhSKhiViDip/</myMavenRepo.write.url>
 	</properties>
 	
 	<repositories>
@@ -195,4 +196,15 @@
 			<version>${softsmithy.version}</version>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>${myMavenRepo.write.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>myMavenRepo.write</id>
+            <url>${myMavenRepo.write.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
